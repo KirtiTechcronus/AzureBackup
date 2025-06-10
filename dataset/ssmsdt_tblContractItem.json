@@ -1,0 +1,60 @@
+{
+	"name": "ssmsdt_tblContractItem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "studioid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "contractid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "productid",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "price",
+				"type": "decimal",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "autopay",
+				"type": "bit"
+			},
+			{
+				"name": "contractitemid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "createddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "modifieddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblContractItem"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

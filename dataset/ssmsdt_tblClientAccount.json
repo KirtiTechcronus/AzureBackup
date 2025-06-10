@@ -1,0 +1,134 @@
+{
+	"name": "ssmsdt_tblClientAccount",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "AMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLASSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLIENTACCOUNTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLIENTCONTRACTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DEPOSITRELEASEDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DEPOSITRELEASEDBYID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ENTRYDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "EXPIRATIONDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "GIFTCARDEXTID",
+				"type": "varchar"
+			},
+			{
+				"name": "GIFTCARDNUMBER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MIGRATIONPMTREFNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "PAYMENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SALEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SDID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UNRECONCILEDAMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblClientAccount"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,375 @@
+{
+	"name": "ssmsdt_Trainers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "ALWAYSALLOWDOUBLEBOOKING",
+				"type": "bit"
+			},
+			{
+				"name": "APPOINTMENTTRN",
+				"type": "bit"
+			},
+			{
+				"name": "ASSISTANT",
+				"type": "bit"
+			},
+			{
+				"name": "ASSISTANT2",
+				"type": "bit"
+			},
+			{
+				"name": "AUTOMATEDCONTACTMETHOD",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BIO",
+				"type": "varchar"
+			},
+			{
+				"name": "CLOSED",
+				"type": "bit"
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CREATIONDATETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CRM",
+				"type": "bit"
+			},
+			{
+				"name": "DEFAULTDEPTID",
+				"type": "varchar"
+			},
+			{
+				"name": "DELETED",
+				"type": "bit"
+			},
+			{
+				"name": "DISABLEATTACHMENTS",
+				"type": "bit"
+			},
+			{
+				"name": "DISPLAYNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "EARNSCOMMISSIONS",
+				"type": "bit"
+			},
+			{
+				"name": "EARNSTIPS",
+				"type": "bit"
+			},
+			{
+				"name": "EMPID",
+				"type": "varchar"
+			},
+			{
+				"name": "EMPLOYEE",
+				"type": "bit"
+			},
+			{
+				"name": "EMPLOYMENTEND",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "EMPLOYMENTSTART",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "GCALID",
+				"type": "varchar"
+			},
+			{
+				"name": "GCALUSERNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "HIDEINPAYROLLEXPORT",
+				"type": "bit"
+			},
+			{
+				"name": "HOURLYRATE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "INDEPENDENTCONTRACTOR",
+				"type": "bit"
+			},
+			{
+				"name": "ISOWNER",
+				"type": "bit"
+			},
+			{
+				"name": "ISSYSTEM",
+				"type": "bit"
+			},
+			{
+				"name": "LASTGOOGLESYNCEND",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LASTGOOGLESYNCSTART",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOCKED",
+				"type": "bit"
+			},
+			{
+				"name": "MALE",
+				"type": "bit"
+			},
+			{
+				"name": "MASSAGE_THERAPIST",
+				"type": "bit"
+			},
+			{
+				"name": "MAX",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MINDBODYEMAILOPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "MOBILEPROVIDER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIED",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "NOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "PICTURE",
+				"type": "varbinary"
+			},
+			{
+				"name": "PROMOTRNCOMMISSIONFLATRATE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PROMOTRNCOMMISSIONPERCRATE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "REP",
+				"type": "bit"
+			},
+			{
+				"name": "REP2",
+				"type": "bit"
+			},
+			{
+				"name": "REP3",
+				"type": "bit"
+			},
+			{
+				"name": "REP4",
+				"type": "bit"
+			},
+			{
+				"name": "REP5",
+				"type": "bit"
+			},
+			{
+				"name": "REP6",
+				"type": "bit"
+			},
+			{
+				"name": "RESERVATIONTRN",
+				"type": "bit"
+			},
+			{
+				"name": "SMODEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "SORTORDER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SSN",
+				"type": "varchar"
+			},
+			{
+				"name": "STDTRNCOMMISSIONFLATRATE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "STDTRNCOMMISSIONPERCRATE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TEACHER",
+				"type": "bit"
+			},
+			{
+				"name": "TRADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "TRADDRESS2",
+				"type": "varchar"
+			},
+			{
+				"name": "TRAINERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TRBIRTHDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "TRCELLPHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "TRCITY",
+				"type": "varchar"
+			},
+			{
+				"name": "TRCOUNTRY",
+				"type": "varchar"
+			},
+			{
+				"name": "TRDEAR",
+				"type": "varchar"
+			},
+			{
+				"name": "TREMAILNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "TRFAXNUMBER",
+				"type": "varchar"
+			},
+			{
+				"name": "TRFIRSTNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "TRFOREIGNZIP",
+				"type": "varchar"
+			},
+			{
+				"name": "TRHOMEPHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "TRLASTNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "TRPAGER",
+				"type": "varchar"
+			},
+			{
+				"name": "TRPOSTALCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "TRSTATE",
+				"type": "varchar"
+			},
+			{
+				"name": "TRWORKEXT",
+				"type": "varchar"
+			},
+			{
+				"name": "TRWORKPHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "WORKSHOP_INSTRUCTOR",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Trainers"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

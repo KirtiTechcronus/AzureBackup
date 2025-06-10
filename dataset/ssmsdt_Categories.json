@@ -1,0 +1,73 @@
+{
+	"name": "ssmsdt_Categories",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "studioid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "categoryname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "active",
+				"type": "bit"
+			},
+			{
+				"name": "service",
+				"type": "bit"
+			},
+			{
+				"name": "isprimary",
+				"type": "bit"
+			},
+			{
+				"name": "issecondary",
+				"type": "bit"
+			},
+			{
+				"name": "sortorder",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "categoryid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "createddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "modifieddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "enterpriselocked",
+				"type": "bit"
+			},
+			{
+				"name": "delete",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Categories"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

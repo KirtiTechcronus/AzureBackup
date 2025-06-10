@@ -1,0 +1,22 @@
+{
+	"name": "LS_Ssms_Onprem_snowflake_mbo",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Connect snowflake_MBO on premise database",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "SQL-Import-VM",
+			"database": "Snowflake_MBO",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "Windows",
+			"userName": "SQL-Import-VM\\kirti",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmOTRlMjY5NS03ODQ3LTQ0ZDYtYmMzNS0zZTJhMTRjOWMzNDYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "httdevintegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

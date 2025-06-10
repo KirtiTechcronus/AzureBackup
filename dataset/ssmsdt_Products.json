@@ -1,0 +1,615 @@
+{
+	"name": "ssmsdt_Products",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "APPLYMEMDISCOUNT",
+				"type": "bit"
+			},
+			{
+				"name": "BARCODEID",
+				"type": "varchar"
+			},
+			{
+				"name": "BARCODELBLLINE1",
+				"type": "varchar"
+			},
+			{
+				"name": "BARCODELBLLINE2",
+				"type": "varchar"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CATEGORY2ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CATEGORYID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLASS",
+				"type": "bit"
+			},
+			{
+				"name": "CLIENTCREDIT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "COLORID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CONTRACTONLY",
+				"type": "bit"
+			},
+			{
+				"name": "COUNT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDATPOS",
+				"type": "bit"
+			},
+			{
+				"name": "CREATEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CRPRODOVERRIDE",
+				"type": "bit"
+			},
+			{
+				"name": "DEBITCARD",
+				"type": "bit"
+			},
+			{
+				"name": "DELETED",
+				"type": "bit"
+			},
+			{
+				"name": "DESCRIPTION",
+				"type": "varchar"
+			},
+			{
+				"name": "DESCRIPTIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DISCONTINUED",
+				"type": "bit"
+			},
+			{
+				"name": "DISCOUNTENDDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DISCOUNTSTARTDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DISCOUNTTYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DISCOUNTVALUE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "DURATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DURATIONUNIT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EARLYDISCOUNT",
+				"type": "bit"
+			},
+			{
+				"name": "EDITABLE",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLE0DAYS",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLE0REM",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLE14DAYS",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLE1REM",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLE2REM",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLE7DAYS",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX1",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX2",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX3",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX4",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX5",
+				"type": "bit"
+			},
+			{
+				"name": "FIXEDACTIVATIONDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "GIFTCARDEDITABLEINCONSUMERMODE",
+				"type": "bit"
+			},
+			{
+				"name": "GIFTCERTIFICATE",
+				"type": "bit"
+			},
+			{
+				"name": "INTROBUYCOUNT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "INTRODUCTORY",
+				"type": "bit"
+			},
+			{
+				"name": "INTRONEWCLIENT",
+				"type": "bit"
+			},
+			{
+				"name": "INTRORETURNCLIENT",
+				"type": "bit"
+			},
+			{
+				"name": "INTRORETURNMONTHWINDOW",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "INVISIBLE",
+				"type": "bit"
+			},
+			{
+				"name": "ISENROLLMENTFEE",
+				"type": "bit"
+			},
+			{
+				"name": "ITEMTYPEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOCK",
+				"type": "bit"
+			},
+			{
+				"name": "LONGDESC",
+				"type": "varchar"
+			},
+			{
+				"name": "LOTSIZE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOWALERTTHRESHOLDBIZ",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOWALERTTHRESHOLDCONS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MANUFACTURERID",
+				"type": "varchar"
+			},
+			{
+				"name": "MARKETINGPLATFORMPRICE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "MAXLEVEL",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MAXMAKEUPS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MAXSCHPERWEEK",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MEMBERSHIPREFERRALDISCOUNTAMOUNT",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "MEMBERSHIPREFERRALDISCOUNTTYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MEMBERSONLY",
+				"type": "bit"
+			},
+			{
+				"name": "MODIFIEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIEDDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MULTIREGISTRATIONDISCOUNTELIGIBLE",
+				"type": "bit"
+			},
+			{
+				"name": "ONLINEPRICE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ONLINESTOREINVLOC",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "OURCOST",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PRICEPERSESSION",
+				"type": "bit"
+			},
+			{
+				"name": "PRIMARYIMAGE",
+				"type": "bit"
+			},
+			{
+				"name": "PRIORITY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PRODUCTGROUPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PRODUCTID",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "PRODUCTNOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "PROFESSIONAL",
+				"type": "bit"
+			},
+			{
+				"name": "PROMOCOMMISSIONFLATRATE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PROMOCOMMISSIONPERCRATE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "QCID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "QCPOSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "QUANTITYPERUNIT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RECEIPTNOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "REORDERLEVEL",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REWARDSEARNRATE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "SCHBACKTOBACKDAYS",
+				"type": "bit"
+			},
+			{
+				"name": "SCHONEPERDAY",
+				"type": "bit"
+			},
+			{
+				"name": "SCHOPENDOM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SCHPERDAY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SELLASPARTNERPRODUCT",
+				"type": "bit"
+			},
+			{
+				"name": "SELLINMARKETPLACE",
+				"type": "bit"
+			},
+			{
+				"name": "SEMESTERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SHIPWEIGHT",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "SHORTDESC",
+				"type": "varchar"
+			},
+			{
+				"name": "SIZEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "SORTORDERDESCBYTYPEGROUP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SPECIAL",
+				"type": "bit"
+			},
+			{
+				"name": "STDCOMMISSIONFLATRATE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "STDCOMMISSIONPERCRATE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SUBCATEGORY",
+				"type": "varchar"
+			},
+			{
+				"name": "SUBCATEGORYID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SUPPLIERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TYPEGROUP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UNITPRICE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "UNITSINSTOCK",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UNITSONORDER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UPACTDATE",
+				"type": "bit"
+			},
+			{
+				"name": "USE2013WORKFLOW",
+				"type": "bit"
+			},
+			{
+				"name": "USEDBYCLASS",
+				"type": "bit"
+			},
+			{
+				"name": "VALUE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VALUE0DAYS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VALUE0REM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VALUE14DAYS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VALUE1REM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VALUE2REM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VALUE7DAYS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VALUTECGIFTCARD",
+				"type": "bit"
+			},
+			{
+				"name": "VARIABLEBARCODE",
+				"type": "bit"
+			},
+			{
+				"name": "WSSHOW",
+				"type": "bit"
+			},
+			{
+				"name": "XREGIONCOPY",
+				"type": "bit"
+			},
+			{
+				"name": "YIELDMANAGEMENTRESTRICTED",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Products"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,68 @@
+{
+	"name": "ssmsdt_tblRegVdLkup",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCALVISITREFNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VISITTYPENAME",
+				"type": "varchar"
+			},
+			{
+				"name": "XREGION",
+				"type": "varchar"
+			},
+			{
+				"name": "XREGIONVISITREFNO",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblRegVdLkup"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

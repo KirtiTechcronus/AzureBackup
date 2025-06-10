@@ -1,0 +1,118 @@
+{
+	"name": "ssmsdt_tblClientAccountSDPayment",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "AMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLIENTACCOUNTAMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "CLIENTACCOUNTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLIENTACCOUNTSDPAYMENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DISCAMT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ITEMTAX1",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ITEMTAX2",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ITEMTAX3",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ITEMTAX4",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ITEMTAX5",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "PAIDWITHSDPAYMENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SDPAYMENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblClientAccountSDPayment"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

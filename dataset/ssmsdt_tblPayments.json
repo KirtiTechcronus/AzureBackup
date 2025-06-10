@@ -1,0 +1,110 @@
+{
+	"name": "ssmsdt_tblPayments",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CCTRANSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DEBITCARDEXTERNALID",
+				"type": "varchar"
+			},
+			{
+				"name": "DEBITCARDID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ISPMTB",
+				"type": "bit"
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "PAYMENTAMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PAYMENTDISCOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PAYMENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYMENTMETHOD",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYMENTNOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "PAYMENTSTATE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYMENTTAX",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "SALEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblPayments"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

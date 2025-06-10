@@ -1,0 +1,18 @@
+{
+	"name": "Snowflakelnksync",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Get data from snowflake mbo",
+		"annotations": [],
+		"type": "SnowflakeV2",
+		"typeProperties": {
+			"authenticationType": "Basic",
+			"accountIdentifier": "accsnowflakemindbody",
+			"user": "HEAD_2_TOE_BRANDS",
+			"database": "MINDBODY",
+			"warehouse": "HD2TOE_SECURE",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDM2RDk1Q0NGLURDNjctNEI2QS04RTI3LTYxQjBBMzZGODMyRV85YjFkMWQ4Mi05MzdjLTQyMmEtYWE2YS01ODQ0NjlmOTk2NDIiDQp9"
+		},
+		"version": "1.1"
+	}
+}

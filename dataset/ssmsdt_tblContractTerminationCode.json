@@ -1,0 +1,68 @@
+{
+	"name": "ssmsdt_tblContractTerminationCode",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "studioid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "terminationcode",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "terminationdesc",
+				"type": "nvarchar"
+			},
+			{
+				"name": "batchkey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "sortorder",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "active",
+				"type": "bit"
+			},
+			{
+				"name": "softdeleted",
+				"type": "bit"
+			},
+			{
+				"name": "loadeddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "createddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "modifieddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblContractTerminationCode"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

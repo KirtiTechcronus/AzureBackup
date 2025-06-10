@@ -1,0 +1,13 @@
+{
+	"name": "sqlCategory",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

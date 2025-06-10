@@ -1,0 +1,526 @@
+{
+	"name": "ssmsdt_Studios",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ALLOWMINDBODYEMAILOPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "AMSLEGACY",
+				"type": "bit"
+			},
+			{
+				"name": "AUTOBATCHMETHOD",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AUTOEMAILREPLYADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "AUTOEMAILREPLYNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "AUTOPAYRETRYDAYS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BILLMBOCLTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BLESSEDTEMPLATE",
+				"type": "bit"
+			},
+			{
+				"name": "BUSINESSDESCRIPTION",
+				"type": "varchar"
+			},
+			{
+				"name": "CCPROCESSOR",
+				"type": "varchar"
+			},
+			{
+				"name": "CCPROCESSOR2",
+				"type": "varchar"
+			},
+			{
+				"name": "CCTESTMODE",
+				"type": "bit"
+			},
+			{
+				"name": "CITY",
+				"type": "varchar"
+			},
+			{
+				"name": "CONSUMERMARKETPLACEMEMBERSHIPOPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "CORPREGIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNTRYCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CRMCONTACTLOGS",
+				"type": "bit"
+			},
+			{
+				"name": "DATEDELETED",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DBPATH",
+				"type": "varchar"
+			},
+			{
+				"name": "DELETED",
+				"type": "bit"
+			},
+			{
+				"name": "DEMOSITE",
+				"type": "bit"
+			},
+			{
+				"name": "DISABLEAUTOPAYS",
+				"type": "bit"
+			},
+			{
+				"name": "DISPLAYTIMEOFFSET",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ENABLEACH",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLEVMS",
+				"type": "bit"
+			},
+			{
+				"name": "ESA",
+				"type": "bit"
+			},
+			{
+				"name": "EXCHANGEAPPROVED",
+				"type": "bit"
+			},
+			{
+				"name": "FEATURED",
+				"type": "bit"
+			},
+			{
+				"name": "FITLINK",
+				"type": "bit"
+			},
+			{
+				"name": "FULLPOS",
+				"type": "bit"
+			},
+			{
+				"name": "GDSPFINISHDATETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "GOODDATAPREMIUMDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "GOODDATAPROJECTCOMPLETE",
+				"type": "bit"
+			},
+			{
+				"name": "GOODDATAPROJECTID",
+				"type": "varchar"
+			},
+			{
+				"name": "GOODDATATEMPLATEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GOOGLEPLACEACTIONFORMSOPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "IMAGEVERSION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LANGUAGETEMPLATEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LASTOWNERCONTRACTCHECK",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LITEVERSION",
+				"type": "bit"
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCALESTR",
+				"type": "varchar"
+			},
+			{
+				"name": "MBACCELERATE",
+				"type": "bit"
+			},
+			{
+				"name": "MBBASIC",
+				"type": "bit"
+			},
+			{
+				"name": "MBCONNECTLISTING",
+				"type": "bit"
+			},
+			{
+				"name": "MBFBOOKEROPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "MBFOPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "MBGO",
+				"type": "bit"
+			},
+			{
+				"name": "MBPRO",
+				"type": "bit"
+			},
+			{
+				"name": "MBROPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "MBSWINFOEMAIL",
+				"type": "varchar"
+			},
+			{
+				"name": "MERCHANTID",
+				"type": "varchar"
+			},
+			{
+				"name": "MERCHANTIDR",
+				"type": "varchar"
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "NEWDBPATH",
+				"type": "varchar"
+			},
+			{
+				"name": "OLDDBPATH",
+				"type": "varchar"
+			},
+			{
+				"name": "PARTNERSACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "R54TIPFIXSCRIPT",
+				"type": "bit"
+			},
+			{
+				"name": "REGIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REGIONSHORT",
+				"type": "varchar"
+			},
+			{
+				"name": "REPLYEMAIL",
+				"type": "varchar"
+			},
+			{
+				"name": "REPLYNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "SCRIPTPRIORITY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SEARCHCHARLIMIT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SHOWINVENTORYTOTHIRDPARTY",
+				"type": "bit"
+			},
+			{
+				"name": "SINGLESERVICEPROVIDER",
+				"type": "bit"
+			},
+			{
+				"name": "SITECREATIONDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SITEDEACTIVATED",
+				"type": "bit"
+			},
+			{
+				"name": "SITETYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SMSACCTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SMSKEYWORDID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SMSPASSWORD",
+				"type": "varchar"
+			},
+			{
+				"name": "SMSUSERNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "SPAFINDERGIFTCARD",
+				"type": "bit"
+			},
+			{
+				"name": "SPAFINDEROPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "SPAFINDERPROENABLED",
+				"type": "bit"
+			},
+			{
+				"name": "STATEPROVCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STUDIONAME",
+				"type": "varchar"
+			},
+			{
+				"name": "STUDIOSHORT",
+				"type": "varchar"
+			},
+			{
+				"name": "STUDIOURL",
+				"type": "varchar"
+			},
+			{
+				"name": "SUBSCRIPTIONLEVELID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SWTYPE",
+				"type": "varchar"
+			},
+			{
+				"name": "TAG",
+				"type": "bit"
+			},
+			{
+				"name": "TAXINCLUSIVEPRICES",
+				"type": "bit"
+			},
+			{
+				"name": "TEMPLATESITE",
+				"type": "bit"
+			},
+			{
+				"name": "TEMPLATESITEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TERMINALID",
+				"type": "varchar"
+			},
+			{
+				"name": "TERMINALIDR",
+				"type": "varchar"
+			},
+			{
+				"name": "THIRDPARTYMONETIZATIONOPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "TIMEZONEID",
+				"type": "varchar"
+			},
+			{
+				"name": "TIMEZONEOFFSET",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TIMEZONEOFFSETMIN",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TOTALWOD",
+				"type": "bit"
+			},
+			{
+				"name": "USECLIENTPHOTOS",
+				"type": "bit"
+			},
+			{
+				"name": "USEDEALS",
+				"type": "bit"
+			},
+			{
+				"name": "USEEFT",
+				"type": "bit"
+			},
+			{
+				"name": "USEEKEY2",
+				"type": "bit"
+			},
+			{
+				"name": "USEEURO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "USELISTEN360",
+				"type": "bit"
+			},
+			{
+				"name": "USEONLINESTORE",
+				"type": "bit"
+			},
+			{
+				"name": "USEPRODVT",
+				"type": "bit"
+			},
+			{
+				"name": "USERESOURCES",
+				"type": "bit"
+			},
+			{
+				"name": "USERESOURCESAPPT",
+				"type": "bit"
+			},
+			{
+				"name": "USEVALUTECGIFTCARDS",
+				"type": "bit"
+			},
+			{
+				"name": "VALUTECCLIENTKEY",
+				"type": "varchar"
+			},
+			{
+				"name": "VALUTECTERMINALID",
+				"type": "varchar"
+			},
+			{
+				"name": "VARID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VATCONVERSIONSCRIPTRUNDATETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "WSAUTOEMAIL",
+				"type": "bit"
+			},
+			{
+				"name": "WSPREMSCH",
+				"type": "bit"
+			},
+			{
+				"name": "WSSTUDIOSHOW",
+				"type": "bit"
+			},
+			{
+				"name": "WSTYPE",
+				"type": "varchar"
+			},
+			{
+				"name": "WSVERSION",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Studios"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,75 @@
+{
+	"name": "ssmsdt_tblClientMembershipIcon",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "studioid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "clientid",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "activedate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "expdate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "seriestypename",
+				"type": "nvarchar"
+			},
+			{
+				"name": "typepurch",
+				"type": "nvarchar"
+			},
+			{
+				"name": "seriestypeid",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "iconnum",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "createddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "modifieddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblClientMembershipIcon"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

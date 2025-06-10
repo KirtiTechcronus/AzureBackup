@@ -1,0 +1,142 @@
+{
+	"name": "ssmsdt_tblPromotion",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACTIVATIONDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOWINONLINESTORE",
+				"type": "bit"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CREATIONDATETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DAYFRI",
+				"type": "bit"
+			},
+			{
+				"name": "DAYMON",
+				"type": "bit"
+			},
+			{
+				"name": "DAYSAT",
+				"type": "bit"
+			},
+			{
+				"name": "DAYSFROMCLOSEDATE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DAYSUN",
+				"type": "bit"
+			},
+			{
+				"name": "DAYTHU",
+				"type": "bit"
+			},
+			{
+				"name": "DAYTUE",
+				"type": "bit"
+			},
+			{
+				"name": "DAYWED",
+				"type": "bit"
+			},
+			{
+				"name": "DISCAMT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "DISCPERC",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "EXCLUSIVEDISCOUNT",
+				"type": "bit"
+			},
+			{
+				"name": "EXPIRATIONDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MAXNUMBEROFUSES",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "PROMOTIONCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "PROMOTIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PROMOTIONNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblPromotion"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

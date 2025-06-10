@@ -1,0 +1,376 @@
+{
+	"name": "ssmsdt_tblReservation",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ADDONAPPTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "APPTGROUPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "APPTPAYRATEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BOOKED",
+				"type": "bit"
+			},
+			{
+				"name": "BOOKEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CANCELLED",
+				"type": "bit"
+			},
+			{
+				"name": "CLASSDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLASSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLASSTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLASSTYPE",
+				"type": "varchar"
+			},
+			{
+				"name": "CLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLOSED",
+				"type": "bit"
+			},
+			{
+				"name": "CLOSEDREVENUE",
+				"type": "bit"
+			},
+			{
+				"name": "CONFIRMED",
+				"type": "bit"
+			},
+			{
+				"name": "CONFIRMED2",
+				"type": "bit"
+			},
+			{
+				"name": "CONFIRMEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CONFIRMEDDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CONTRACTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CPTUNITS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CPTUNITSENC",
+				"type": "varchar"
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CREATIONDATETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CURRSERIES",
+				"type": "bit"
+			},
+			{
+				"name": "EMAILFOLLOWUPSENT",
+				"type": "bit"
+			},
+			{
+				"name": "EMAILREMINDERSENT",
+				"type": "bit"
+			},
+			{
+				"name": "EMPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FULL",
+				"type": "bit"
+			},
+			{
+				"name": "GENDERPREF",
+				"type": "bit"
+			},
+			{
+				"name": "LEVELID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOCK",
+				"type": "bit"
+			},
+			{
+				"name": "MBFBOOKINGID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MISSED",
+				"type": "bit"
+			},
+			{
+				"name": "MOBILEREMINDERSENT",
+				"type": "bit"
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MYENDTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MYSTARTTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "NOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "NUMDEDUCTED",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "OLDCLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYSCALE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PENDING",
+				"type": "bit"
+			},
+			{
+				"name": "PMTREFNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PORTALID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RECDAYS",
+				"type": "varchar"
+			},
+			{
+				"name": "RECENDDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "RECNUM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RECTYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RECURRING",
+				"type": "bit"
+			},
+			{
+				"name": "REQUESTDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "REQUESTEDDATESEARCHTYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REQUESTEDTIMESEARCHTYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RESERVEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RESERVEDFOR",
+				"type": "varchar"
+			},
+			{
+				"name": "RESTSOURCE",
+				"type": "varchar"
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "SOURCEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STAFFPROVIDERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STATUS",
+				"type": "varchar"
+			},
+			{
+				"name": "STUDIO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TRAINERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TRAINERREQUESTED",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TRAINTYPE",
+				"type": "varchar"
+			},
+			{
+				"name": "TRNSCHEDID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TYPEGROUP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TYPETAKEN",
+				"type": "varchar"
+			},
+			{
+				"name": "VALUE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VDID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VISITREFNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VISITTYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WAITLIST",
+				"type": "bit"
+			},
+			{
+				"name": "WEBSCHEDULER",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblReservation"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

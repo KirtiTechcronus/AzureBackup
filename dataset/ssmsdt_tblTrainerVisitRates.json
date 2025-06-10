@@ -1,0 +1,138 @@
+{
+	"name": "ssmsdt_tblTrainerVisitRates",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CREATIONDATETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "FINISHTIME",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FINISHTIMEBAK",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LASTMODIFIEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LASTMODIFIEDON",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "PAYAMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PAYRATETYPEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PERCENTPAY",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "PREPTIME",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PREPTIMEBAK",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PRICE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TIMELENGTH",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TRAINERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VISITTYPEID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblTrainerVisitRates"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

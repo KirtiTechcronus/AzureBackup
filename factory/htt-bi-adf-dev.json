@@ -1,0 +1,9 @@
+{
+	"name": "htt-bi-adf-dev",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d4423f6c-d068-4d7d-b336-58a9b7798ecb",
+		"tenantId": "0c0e35dc-188a-4eb3-b8ba-61752154b407"
+	}
+}

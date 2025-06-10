@@ -1,0 +1,78 @@
+{
+	"name": "ssmsdt_tblClientMembershipData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "studioid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "clientid",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "pmtrefno",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "clientcontractid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "locationid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "membershipstatusid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "deleted",
+				"type": "bit"
+			},
+			{
+				"name": "statusmessage",
+				"type": "nvarchar"
+			},
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "seriestypeid",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "createddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "modifieddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblClientMembershipData"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

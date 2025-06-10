@@ -1,0 +1,302 @@
+{
+	"name": "ssmsdt_Visit_Data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "APICLIENTSIGNEDIN",
+				"type": "varchar"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BOOKEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CANCELLED",
+				"type": "bit"
+			},
+			{
+				"name": "CLASSDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLASSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLASSTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLASSTYPE",
+				"type": "varchar"
+			},
+			{
+				"name": "CLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLOSED",
+				"type": "bit"
+			},
+			{
+				"name": "CLOSEDREVENUE",
+				"type": "bit"
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CREATIONDATETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CURRSERIES",
+				"type": "bit"
+			},
+			{
+				"name": "EMAILREMINDERSENT",
+				"type": "bit"
+			},
+			{
+				"name": "EMPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ENROLLEDVISIT",
+				"type": "bit"
+			},
+			{
+				"name": "LEADER",
+				"type": "bit"
+			},
+			{
+				"name": "LEVELID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOCK",
+				"type": "bit"
+			},
+			{
+				"name": "MAKEUPVISITREFNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MBFBOOKINGID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MEDIAID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MISSED",
+				"type": "bit"
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MYENDTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MYSTARTTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "NOSHOWEMAILSENT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "NUMDEDUCTED",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "OLDCLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYSCALE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PENDING",
+				"type": "bit"
+			},
+			{
+				"name": "PMTREFNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REASSIGNEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REQUESTDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "RESERVEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RESERVEDFOR",
+				"type": "varchar"
+			},
+			{
+				"name": "RESOURCETYPEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RESTSOURCE",
+				"type": "varchar"
+			},
+			{
+				"name": "SIGNEDIN",
+				"type": "bit"
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "SOURCEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STATUS",
+				"type": "varchar"
+			},
+			{
+				"name": "STUDIO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TRAINERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TRAINERID2",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TRAINERID3",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TRAINTYPE",
+				"type": "varchar"
+			},
+			{
+				"name": "TYPEGROUP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TYPETAKEN",
+				"type": "varchar"
+			},
+			{
+				"name": "VALUE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VDGROUPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VISITNOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "VISITREFNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VISITTYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WEBSCHEDULER",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Visit_Data"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

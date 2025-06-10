@@ -1,0 +1,110 @@
+{
+	"name": "ssmsdt_Payment_Types",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOW0",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOWGT0",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOWREFUND",
+				"type": "bit"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CASHEQ",
+				"type": "bit"
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DELETED",
+				"type": "bit"
+			},
+			{
+				"name": "FEE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "HIDDEN",
+				"type": "bit"
+			},
+			{
+				"name": "ITEM_NUM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "PAYMENTTYPEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYNOTES",
+				"type": "bit"
+			},
+			{
+				"name": "PAYNOTESLABEL",
+				"type": "varchar"
+			},
+			{
+				"name": "PMTTYPES",
+				"type": "varchar"
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "THIRDPARTYCLIENTID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Payment_Types"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

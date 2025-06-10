@@ -1,0 +1,238 @@
+{
+	"name": "ssmsdt_Sales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "AMOUNTTENDERED",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CARDHOLDER",
+				"type": "varchar"
+			},
+			{
+				"name": "CARDHOLDERB",
+				"type": "varchar"
+			},
+			{
+				"name": "CASHREGISTERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CCAUTHNO",
+				"type": "varchar"
+			},
+			{
+				"name": "CHECKNO",
+				"type": "varchar"
+			},
+			{
+				"name": "CHECKNOB",
+				"type": "varchar"
+			},
+			{
+				"name": "CLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLOSED",
+				"type": "bit"
+			},
+			{
+				"name": "CLOSEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "EMPLOYEEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HASRETURN",
+				"type": "bit"
+			},
+			{
+				"name": "INTENDEDCONSUMERMODEPURCHASEMASTERLOCATIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MBFSALEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "OLDCLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ORDERSTATE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYMENTAMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PAYMENTAMOUNTB",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PAYMENTMETHOD",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYMENTMETHODB",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "QBOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RESTSOURCE",
+				"type": "varchar"
+			},
+			{
+				"name": "SALEDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SALEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SALESREPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SALETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SHIPADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPAMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "SHIPCITY",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPCOUNTRY",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPMETHOD",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPPEDDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SHIPPOSTALCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPSTATE",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPTRACKNUM",
+				"type": "varchar"
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "SOURCEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TAX",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "UPGRADESALEID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Sales"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

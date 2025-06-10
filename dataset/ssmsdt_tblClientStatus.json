@@ -1,0 +1,71 @@
+{
+	"name": "ssmsdt_tblClientStatus",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "ALERTENABLED",
+				"type": "bit"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ISSYSTEM",
+				"type": "bit"
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STATUSDESC",
+				"type": "varchar"
+			},
+			{
+				"name": "STATUSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblClientStatus"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

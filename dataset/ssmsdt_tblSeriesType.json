@@ -1,0 +1,122 @@
+{
+	"name": "ssmsdt_tblSeriesType",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOWCLTMODEUNPAIDSCHED",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOWINSSI",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOWNONMEMBERPURCHASES",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOWNONMEMBERRETAILPURCHASES",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOWNOPAYAPPTBOOKING",
+				"type": "bit"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CREATIONDATETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ICONNUM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ISSYSTEM",
+				"type": "bit"
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "PRODDISCOUNTPERC",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "SCHOPENDOM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SERIESTYPEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SERIESTYPENAME",
+				"type": "varchar"
+			},
+			{
+				"name": "SERVICEDISCOUNTPERC",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "SORTORDER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "USE2013WORKFLOW",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblSeriesType"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

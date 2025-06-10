@@ -1,0 +1,315 @@
+{
+	"name": "ssmsdt_Location",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "ADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "ADDRESSLN2",
+				"type": "varchar"
+			},
+			{
+				"name": "ADPCOCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "AUTOINACTIVECLIENTS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BANKCLIENTID",
+				"type": "varchar"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BATCHPROCESSING",
+				"type": "bit"
+			},
+			{
+				"name": "CITY",
+				"type": "varchar"
+			},
+			{
+				"name": "CONTACTNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "COUNTRY",
+				"type": "varchar"
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CSIALERTNONPREREG",
+				"type": "bit"
+			},
+			{
+				"name": "CSIPRTRECEIPTS",
+				"type": "bit"
+			},
+			{
+				"name": "EMAIL",
+				"type": "varchar"
+			},
+			{
+				"name": "ENABLEAUTOBATCH",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX1",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX2",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX3",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX4",
+				"type": "bit"
+			},
+			{
+				"name": "ENABLETAX5",
+				"type": "bit"
+			},
+			{
+				"name": "EXT",
+				"type": "varchar"
+			},
+			{
+				"name": "FACILITYSQUAREFEET",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FTPHEADERRECORD",
+				"type": "varchar"
+			},
+			{
+				"name": "FTPPASSWORD",
+				"type": "varchar"
+			},
+			{
+				"name": "FTPUSERNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "HOSTSTUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "INVACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "LABELTAX1",
+				"type": "varchar"
+			},
+			{
+				"name": "LABELTAX2",
+				"type": "varchar"
+			},
+			{
+				"name": "LABELTAX3",
+				"type": "varchar"
+			},
+			{
+				"name": "LABELTAX4",
+				"type": "varchar"
+			},
+			{
+				"name": "LABELTAX5",
+				"type": "varchar"
+			},
+			{
+				"name": "LATITUDE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATIONDESCRIPTION",
+				"type": "varchar"
+			},
+			{
+				"name": "LOCATIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOCATIONNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "LONGITUDE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "MASTERLOCID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MBACCOUNTNUMBER",
+				"type": "varchar"
+			},
+			{
+				"name": "MID",
+				"type": "varchar"
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "NUMBERTREATMENTROOMS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "OP_ACCTNUM",
+				"type": "varchar"
+			},
+			{
+				"name": "PHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "POSTALCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPADDRESS2",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPCITY",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPEXT",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPPHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPPOC",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPPOSTAL",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPSTATE",
+				"type": "varchar"
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STATEPROVCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "STREETADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TAX1",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "TAX2",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "TAX3",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "TAX4",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "TAX5",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "TAXGROUPING",
+				"type": "bit"
+			},
+			{
+				"name": "TAXID",
+				"type": "varchar"
+			},
+			{
+				"name": "TID",
+				"type": "varchar"
+			},
+			{
+				"name": "WAC",
+				"type": "bit"
+			},
+			{
+				"name": "WSSHOW",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Location"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

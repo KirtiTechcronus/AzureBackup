@@ -1,0 +1,248 @@
+{
+	"name": "ssmsdt_tblTrainerSchedules",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "AVAILNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLASSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATED",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DAYFRI",
+				"type": "bit"
+			},
+			{
+				"name": "DAYMON",
+				"type": "bit"
+			},
+			{
+				"name": "DAYSAT",
+				"type": "bit"
+			},
+			{
+				"name": "DAYSUN",
+				"type": "bit"
+			},
+			{
+				"name": "DAYTHU",
+				"type": "bit"
+			},
+			{
+				"name": "DAYTUE",
+				"type": "bit"
+			},
+			{
+				"name": "DAYWED",
+				"type": "bit"
+			},
+			{
+				"name": "ENDDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ENDTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MASKPUBLIC",
+				"type": "bit"
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SCHEDULEGROUPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SHOWPUBLIC",
+				"type": "bit"
+			},
+			{
+				"name": "SINGLEDAYAVAILABILITY",
+				"type": "bit"
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STARTDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "STARTTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TG1",
+				"type": "bit"
+			},
+			{
+				"name": "TG10",
+				"type": "bit"
+			},
+			{
+				"name": "TG11",
+				"type": "bit"
+			},
+			{
+				"name": "TG12",
+				"type": "bit"
+			},
+			{
+				"name": "TG13",
+				"type": "bit"
+			},
+			{
+				"name": "TG14",
+				"type": "bit"
+			},
+			{
+				"name": "TG15",
+				"type": "bit"
+			},
+			{
+				"name": "TG16",
+				"type": "bit"
+			},
+			{
+				"name": "TG17",
+				"type": "bit"
+			},
+			{
+				"name": "TG18",
+				"type": "bit"
+			},
+			{
+				"name": "TG19",
+				"type": "bit"
+			},
+			{
+				"name": "TG2",
+				"type": "bit"
+			},
+			{
+				"name": "TG20",
+				"type": "bit"
+			},
+			{
+				"name": "TG21",
+				"type": "bit"
+			},
+			{
+				"name": "TG3",
+				"type": "bit"
+			},
+			{
+				"name": "TG4",
+				"type": "bit"
+			},
+			{
+				"name": "TG5",
+				"type": "bit"
+			},
+			{
+				"name": "TG6",
+				"type": "bit"
+			},
+			{
+				"name": "TG7",
+				"type": "bit"
+			},
+			{
+				"name": "TG8",
+				"type": "bit"
+			},
+			{
+				"name": "TG9",
+				"type": "bit"
+			},
+			{
+				"name": "TRAINERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UNAVAILABLE",
+				"type": "bit"
+			},
+			{
+				"name": "UPDATED",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "VISITREFNO",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblTrainerSchedules"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

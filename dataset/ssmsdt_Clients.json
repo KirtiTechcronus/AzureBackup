@@ -1,0 +1,790 @@
+{
+	"name": "ssmsdt_Clients",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACCOUNTPAYMENTSALLOWED",
+				"type": "bit"
+			},
+			{
+				"name": "ADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "ADDRESS2",
+				"type": "varchar"
+			},
+			{
+				"name": "ALLOWACCOUNTPURCHASES",
+				"type": "bit"
+			},
+			{
+				"name": "ALLOWMISSINGBILLINGALERT",
+				"type": "bit"
+			},
+			{
+				"name": "APPTGENDERPREFMALE",
+				"type": "bit"
+			},
+			{
+				"name": "AUTOMATEDCONTACTMETHOD",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AUTOPAYLIMIT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "BAKCLOSEDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BELTSIZE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BIRTHDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "BIRTHDAYEMAILSENT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "BROCHREQUEST",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "BUST",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "CCEXPIREEMAILSENT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CELLPHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "CHANGEPASSWORD",
+				"type": "bit"
+			},
+			{
+				"name": "CITY",
+				"type": "varchar"
+			},
+			{
+				"name": "CLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLOSEDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLOSEEMAILSENT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLOSEFOLLOWUPEMAILSENT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CLOSEPROBABILITY",
+				"type": "varchar"
+			},
+			{
+				"name": "COMPANYNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "CONVERTEDDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CORPLOGIN",
+				"type": "varchar"
+			},
+			{
+				"name": "COUNTRY",
+				"type": "varchar"
+			},
+			{
+				"name": "CREATEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CURRENTSERIES",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DEACTIVATEDTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DEAR",
+				"type": "varchar"
+			},
+			{
+				"name": "DELETED",
+				"type": "bit"
+			},
+			{
+				"name": "EMAIL",
+				"type": "varchar"
+			},
+			{
+				"name": "EMAILNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "EMAILSTATUS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EMERGCONTACT",
+				"type": "varchar"
+			},
+			{
+				"name": "EMERGEMAIL",
+				"type": "varchar"
+			},
+			{
+				"name": "EMERGPHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "EMERGRELA",
+				"type": "varchar"
+			},
+			{
+				"name": "EXPECTEDCLOSEDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "EXPECTEDINCOME",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "FAXNUMBER",
+				"type": "varchar"
+			},
+			{
+				"name": "FIRSTAPPTDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "FIRSTCLASS",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "FIRSTCLASSDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "FIRSTCONTACTDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "FIRSTNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "FIRSTVISITAPPTEMAILSENT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "FIRSTVISITRESEMAILSENT",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "FOREIGNZIP",
+				"type": "varchar"
+			},
+			{
+				"name": "GENDEROPTIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GIRTH",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "HASLINKEDMINDBODYACCOUNT",
+				"type": "bit"
+			},
+			{
+				"name": "HEAD",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "HEIGHT",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "HIP",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "HOMEPHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "HOMESTUDIO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "HOMETERRITORY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "INACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "INSEAM",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "INSURANCECOMPANY",
+				"type": "varchar"
+			},
+			{
+				"name": "INSURANCEPOLICYNUM",
+				"type": "varchar"
+			},
+			{
+				"name": "IPADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "IS3RDPARTY",
+				"type": "bit"
+			},
+			{
+				"name": "ISCOMPANY",
+				"type": "bit"
+			},
+			{
+				"name": "ISPROSPECT",
+				"type": "bit"
+			},
+			{
+				"name": "ISSYSTEM",
+				"type": "bit"
+			},
+			{
+				"name": "LASTCLASS",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LASTFORMULANOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "LASTNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "LATITUDE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "LIABILITYAGREEMENTDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LIABILITYRELBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LIABILITYRELEASE",
+				"type": "bit"
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOCATIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LOCIDSTR",
+				"type": "varchar"
+			},
+			{
+				"name": "LOCKERDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCKERNO",
+				"type": "varchar"
+			},
+			{
+				"name": "LOGINNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "LONGITUDE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "MALE",
+				"type": "bit"
+			},
+			{
+				"name": "MBFVISITORID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MBOACCESSGROUP",
+				"type": "varchar"
+			},
+			{
+				"name": "MBORESTRICTIP",
+				"type": "bit"
+			},
+			{
+				"name": "MEASUREMENTSTAKEN",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MEDICALERT",
+				"type": "varchar"
+			},
+			{
+				"name": "MEDICALERTSHORT",
+				"type": "varchar"
+			},
+			{
+				"name": "MERGECLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MERGEEMPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MERGETIMESTAMP",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MIDDLENAME",
+				"type": "varchar"
+			},
+			{
+				"name": "MOBILEPROVIDER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIED",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MODIFIEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "NOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "OCCUPATION",
+				"type": "varchar"
+			},
+			{
+				"name": "OLDCLIENTID",
+				"type": "varchar"
+			},
+			{
+				"name": "ONLINESIGNUP",
+				"type": "bit"
+			},
+			{
+				"name": "PAGER",
+				"type": "varchar"
+			},
+			{
+				"name": "PARENT",
+				"type": "varchar"
+			},
+			{
+				"name": "PASSWORD",
+				"type": "varchar"
+			},
+			{
+				"name": "PASSWORD1",
+				"type": "varchar"
+			},
+			{
+				"name": "PASSWORD2",
+				"type": "varchar"
+			},
+			{
+				"name": "PASSWORD3",
+				"type": "varchar"
+			},
+			{
+				"name": "PASSWORD4",
+				"type": "varchar"
+			},
+			{
+				"name": "PASSWORDCHANGEKEY",
+				"type": "varchar"
+			},
+			{
+				"name": "PASSWORDENC",
+				"type": "varchar"
+			},
+			{
+				"name": "POSTALCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "PROSPECTSTAGE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PWDCHANGEDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "QBOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REACTIVATEDTIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "REFERREDBY",
+				"type": "varchar"
+			},
+			{
+				"name": "REFERRERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REFUSEDEMAIL",
+				"type": "bit"
+			},
+			{
+				"name": "REPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REPID2",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REPID3",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REPID4",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REPID5",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REPID6",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RESTSOURCE",
+				"type": "varchar"
+			},
+			{
+				"name": "REWARDSOPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "RSSID",
+				"type": "varchar"
+			},
+			{
+				"name": "SECRETCLUE",
+				"type": "varchar"
+			},
+			{
+				"name": "SECRETWORD",
+				"type": "varchar"
+			},
+			{
+				"name": "SENDMEPROMOTIONS",
+				"type": "bit"
+			},
+			{
+				"name": "SENDMEREMINDERS",
+				"type": "bit"
+			},
+			{
+				"name": "SHIPADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPCITY",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPCOUNTRY",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPPOSTALCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "SHIPSTATE",
+				"type": "varchar"
+			},
+			{
+				"name": "SHOE",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "SIGNUPDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SMSMESSAGEOPTOUT",
+				"type": "bit"
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "SOURCEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SPIRITNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "STAFFALERTMSG",
+				"type": "varchar"
+			},
+			{
+				"name": "STAFFALERTMSGSHORT",
+				"type": "varchar"
+			},
+			{
+				"name": "STATE",
+				"type": "varchar"
+			},
+			{
+				"name": "STATUS",
+				"type": "varchar"
+			},
+			{
+				"name": "STATUSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SUSPENDED",
+				"type": "bit"
+			},
+			{
+				"name": "SUSPENDFROMDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SUSPENDTODATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "TAXIDENTIFICATIONNUMBER",
+				"type": "varchar"
+			},
+			{
+				"name": "TIGHTS",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "TITLE",
+				"type": "varchar"
+			},
+			{
+				"name": "TRAINERID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "VACCINEVERIFIED",
+				"type": "bit"
+			},
+			{
+				"name": "VERIFICATIONINFO",
+				"type": "varchar"
+			},
+			{
+				"name": "WAIST",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "WEBSITE",
+				"type": "varchar"
+			},
+			{
+				"name": "WORKEXTENSION",
+				"type": "varchar"
+			},
+			{
+				"name": "WORKPHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "WSPENDING",
+				"type": "bit"
+			},
+			{
+				"name": "XREGIONCOPY",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Clients"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

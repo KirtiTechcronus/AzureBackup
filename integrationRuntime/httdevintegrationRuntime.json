@@ -1,0 +1,6 @@
+{
+	"name": "httdevintegrationRuntime",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

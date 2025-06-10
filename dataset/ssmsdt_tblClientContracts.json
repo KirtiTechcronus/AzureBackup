@@ -1,0 +1,167 @@
+{
+	"name": "ssmsdt_tblClientContracts",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "studioid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "clientid",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "contractid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "agreementdate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "startdate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "enddate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "autorenewing",
+				"type": "bit"
+			},
+			{
+				"name": "clientcontractid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "deleted",
+				"type": "bit"
+			},
+			{
+				"name": "iagreed",
+				"type": "bit"
+			},
+			{
+				"name": "iagreedatetime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "terminationdate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "terminatedby",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "terminationtimestamp",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "recclientid",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "rejectioncount",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "autorenewclientcontractid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "agreedinbizmodeempid",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "terminationcode",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "autorenewalnotificationsent",
+				"type": "bit"
+			},
+			{
+				"name": "firstautopay",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "lastautopay",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "normalautopay",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "ismonthtomonth",
+				"type": "bit"
+			},
+			{
+				"name": "renewtomonthtomonth",
+				"type": "bit"
+			},
+			{
+				"name": "clientcontractsaleid",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "signaturefileexists",
+				"type": "bit"
+			},
+			{
+				"name": "createddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "modifieddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblClientContracts"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,373 @@
+{
+	"name": "ssmsdt_Payment_Data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACTDATEONFIRSTVISIT",
+				"type": "bit"
+			},
+			{
+				"name": "ACTIVEDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CARDHOLDERB",
+				"type": "varchar"
+			},
+			{
+				"name": "CARDHOLDERSNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "CHECKNOB",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CHECKNUMBER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLASSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLIENTCONTRACTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLIENTCREDIT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "CLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLOSED",
+				"type": "bit"
+			},
+			{
+				"name": "CLOSEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COUNT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CURRENT_SERIES",
+				"type": "bit"
+			},
+			{
+				"name": "DEPOSITRELEASEDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DEPOSITRELEASEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DURATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DURATIONUNIT",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EXPDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "EXPIRED",
+				"type": "bit"
+			},
+			{
+				"name": "GIFTCARDEXTID",
+				"type": "varchar"
+			},
+			{
+				"name": "GIFTCARDNUMBER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GOODORPHAN",
+				"type": "bit"
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MAXSCHPERWEEK",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "NUMCLASSES",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "OLDCLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "OLDGIFTCARDNUMBER",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYMENTAMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PAYMENTAMOUNTB",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "PAYMENTDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "PAYMENTMETHOD",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYMENTMETHODB",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PMTNOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "PMTREFNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PRIORITY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PRODUCTID",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "REALREMAINING",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RECEIPTNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REMAINING",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RETURNED",
+				"type": "bit"
+			},
+			{
+				"name": "SALEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SCHBACKTOBACKDAYS",
+				"type": "bit"
+			},
+			{
+				"name": "SCHONEPERDAY",
+				"type": "bit"
+			},
+			{
+				"name": "SCHOPENDOM",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SCHPERDAY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SENT0DAYS",
+				"type": "bit"
+			},
+			{
+				"name": "SENT0DAYSDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SENT0REM",
+				"type": "bit"
+			},
+			{
+				"name": "SENT0REMDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SENT14DAYS",
+				"type": "bit"
+			},
+			{
+				"name": "SENT14DAYSDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SENT1REM",
+				"type": "bit"
+			},
+			{
+				"name": "SENT1REMDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SENT2REM",
+				"type": "bit"
+			},
+			{
+				"name": "SENT2REMDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SENT7DAYS",
+				"type": "bit"
+			},
+			{
+				"name": "SENT7DAYSDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "SOLDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SOURCEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TERMINATIONCLIENTCONTRACTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TYPEGROUP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TYPEPURCH",
+				"type": "varchar"
+			},
+			{
+				"name": "USED_UP",
+				"type": "bit"
+			},
+			{
+				"name": "VALUE",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Payment_Data"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,114 @@
+{
+	"name": "ssmsdt_tblContract",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "studioid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "contractid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "contractname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "frequency",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "totalnumpayments",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "deposit",
+				"type": "decimal",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "autorenewing",
+				"type": "bit"
+			},
+			{
+				"name": "discontinued",
+				"type": "bit"
+			},
+			{
+				"name": "deleted",
+				"type": "bit"
+			},
+			{
+				"name": "enabletax1",
+				"type": "bit"
+			},
+			{
+				"name": "enabletax2",
+				"type": "bit"
+			},
+			{
+				"name": "enabletax3",
+				"type": "bit"
+			},
+			{
+				"name": "enabletax4",
+				"type": "bit"
+			},
+			{
+				"name": "enabletax5",
+				"type": "bit"
+			},
+			{
+				"name": "creationdatetime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "createddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "modifieddatetimeutc",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "contractsortorderdesc",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "introductoryoffertype",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "normalautopay",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblContract"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

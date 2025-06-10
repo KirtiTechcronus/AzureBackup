@@ -1,0 +1,21 @@
+{
+	"name": "LS_Ssms_Onprem",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "SQL-Import-VM",
+			"database": "Bishops",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "Windows",
+			"userName": "SQL-Import-VM\\kirti",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmN2ExYmNhNi1jNGFjLTQyNTQtYTk4Yy1jOGU1OGRmM2ZiNmIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "httdevintegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

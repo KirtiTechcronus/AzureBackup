@@ -1,0 +1,174 @@
+{
+	"name": "ssmsdt_tblTypeGroup",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ACTIVE",
+				"type": "bit"
+			},
+			{
+				"name": "ADPASST1PAYROLLCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "ADPTRPAYROLLCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BLOCKLENGTH",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CANCELCONMODE",
+				"type": "bit"
+			},
+			{
+				"name": "CANCELOFFSET",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CAPACITY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COLOR",
+				"type": "varchar"
+			},
+			{
+				"name": "CREATEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "CREATIONDATETIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DISPLAYNAME",
+				"type": "varchar"
+			},
+			{
+				"name": "LASTMODIFIEDBY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "LASTMODIFIEDON",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LIVESTREAMENABLED",
+				"type": "bit"
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MBFTYPEGROUPOPTIN",
+				"type": "bit"
+			},
+			{
+				"name": "MEMBERSONLY",
+				"type": "bit"
+			},
+			{
+				"name": "MINDBODYLIVESTREAMENABLED",
+				"type": "bit"
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "SCHEDOFFSET",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SCHEDOFFSETEND",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TYPEGROUP",
+				"type": "varchar"
+			},
+			{
+				"name": "TYPEGROUPID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WSAPPOINTMENT",
+				"type": "bit"
+			},
+			{
+				"name": "WSARRIVAL",
+				"type": "bit"
+			},
+			{
+				"name": "WSDISABLE",
+				"type": "bit"
+			},
+			{
+				"name": "WSENROLLMENT",
+				"type": "bit"
+			},
+			{
+				"name": "WSMEDIA",
+				"type": "bit"
+			},
+			{
+				"name": "WSRESERVATION",
+				"type": "bit"
+			},
+			{
+				"name": "WSRESOURCE",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblTypeGroup"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

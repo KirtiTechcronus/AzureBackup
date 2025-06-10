@@ -1,0 +1,302 @@
+{
+	"name": "ssmsdt_Sales_Details",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Ssms_Onprem_snowflake_mbo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "BARCODEID",
+				"type": "varchar"
+			},
+			{
+				"name": "BATCHKEY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CATEGORY2ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CATEGORYID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLASSID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLIENTCONTRACTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CLOSED",
+				"type": "bit"
+			},
+			{
+				"name": "CLOSEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COLORID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COMMISSIONTRN2ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COMMISSIONTRNID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CONTRACTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CREATEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "DESCRIPTION",
+				"type": "varchar"
+			},
+			{
+				"name": "DISCAMT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "DISCOUNT",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "DYNAMICSERVICEPRICINGOPTION",
+				"type": "bit"
+			},
+			{
+				"name": "GROSSUNITPRICE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "INTROOFFERTYPE",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "INVLOC",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ITEMDEBITCARDID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ITEMTAX1",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ITEMTAX2",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ITEMTAX3",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ITEMTAX4",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "ITEMTAX5",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "LOADEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "LOCATION",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MODIFIEDDATETIMEUTC",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MONETIZATIONAGGREGATEDDATE",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "MONETIZATIONMASTERLOCATIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "NOTAX",
+				"type": "bit"
+			},
+			{
+				"name": "NOTES",
+				"type": "varchar"
+			},
+			{
+				"name": "ORDERSTATUS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PAYMENTDEBITCARDID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PMTREFNO",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PRODUCTID",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "PROMOTEDINCONNECT",
+				"type": "bit"
+			},
+			{
+				"name": "PROMOTIONID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PRORATEAMOUNT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "QUANTITY",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RECCLIENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "REDEEMCODE",
+				"type": "varchar"
+			},
+			{
+				"name": "RETURNED",
+				"type": "bit"
+			},
+			{
+				"name": "SALEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SDID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SDPAYMENTAMT",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "SDPAYMENTAMTB",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "SHIPMENTID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SIZEID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SOFTDELETED",
+				"type": "bit"
+			},
+			{
+				"name": "STUDIOID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SUBCATEGORY",
+				"type": "varchar"
+			},
+			{
+				"name": "SUBCATEGORYID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TIPTRNID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UNITPRICE",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Sales_Details"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

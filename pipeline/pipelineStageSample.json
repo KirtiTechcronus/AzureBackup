@@ -1,0 +1,229 @@
+{
+	"name": "pipelineStageSample",
+	"properties": {
+		"activities": [
+			{
+				"name": "Categories",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeV2Source",
+						"query": "SELECT \n    DESCRIPTION,\n    ACTIVE,\n    SOFTDELETED,\n    SERVICE,\n    LOADEDDATETIMEUTC::VARCHAR AS LOADEDDATETIMEUTC, -- Remove timezone\n    ISPRIMARY,\n    CATEGORYID,\n    MODIFIEDDATETIMEUTC::VARCHAR AS MODIFIEDDATETIMEUTC, -- Remove timezone\n    DELETED,\n    ISSECONDARY,\n    BATCHKEY,\n    ENTERPRISELOCKED,\n    STUDIOID,\n    CATEGORYNAME,\n    SORTORDER,\n    CREATEDDATETIMEUTC::VARCHAR AS CREATEDDATETIMEUTC -- Remove timezone\nFROM MINDBODY.HD2TOE_SECURE.CATEGORIES\nWHERE CAST(MODIFIEDDATETIMEUTC AS DATE) >= DATEADD(DAY,-120, CAST(GETDATE() AS DATE))\nOR CAST(LOADEDDATETIMEUTC AS DATE) >= DATEADD(DAY,-1, CAST(GETDATE() AS DATE))",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"writeBehavior": "upsert",
+						"upsertSettings": {
+							"useTempDB": true,
+							"keys": [
+								"STUDIOID",
+								"CATEGORYID"
+							]
+						},
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "httdevlnkblob",
+							"type": "LinkedServiceReference"
+						},
+						"path": "snowflake"
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ACTIVE",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "ACTIVE",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "BATCHKEY",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "BATCHKEY",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "CATEGORYID",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "CATEGORYID",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "CATEGORYNAME",
+									"type": "String"
+								},
+								"sink": {
+									"name": "CATEGORYNAME",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "CREATEDDATETIMEUTC",
+									"type": "String"
+								},
+								"sink": {
+									"name": "CREATEDDATETIMEUTC",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "DELETED",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "DELETED",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "DESCRIPTION",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DESCRIPTION",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ENTERPRISELOCKED",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "ENTERPRISELOCKED",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "ISPRIMARY",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "ISPRIMARY",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "ISSECONDARY",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "ISSECONDARY",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "LOADEDDATETIMEUTC",
+									"type": "String"
+								},
+								"sink": {
+									"name": "LOADEDDATETIMEUTC",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "MODIFIEDDATETIMEUTC",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MODIFIEDDATETIMEUTC",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "SERVICE",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "SERVICE",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "SOFTDELETED",
+									"type": "Boolean"
+								},
+								"sink": {
+									"name": "SOFTDELETED",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"name": "SORTORDER",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "SORTORDER",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"name": "STUDIOID",
+									"type": "Decimal"
+								},
+								"sink": {
+									"name": "STUDIOID",
+									"type": "Int32"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "snowflakeCategory",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SqlServerTable1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-06-06T09:07:06Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
